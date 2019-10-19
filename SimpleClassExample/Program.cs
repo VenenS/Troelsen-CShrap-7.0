@@ -10,15 +10,19 @@ namespace SimpleClassExample
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car();
-            myCar.petName = "Henry";
-            myCar.currSpeed = 10;
-            for (int i = 0; i <=10; i++)
-            {
-                myCar.SpeedUP(5);
-                myCar.PrintState();
-            }
-            Console.ReadLine();
+            Car chuck = new Car();
+            chuck.PrintState();
+
+            Car mary = new Car("MAry");
+            mary.PrintState();
+
+            Car daisy = new Car("Daisy", 75);
+            daisy.PrintState();
+
+            Motorcycle c = new Motorcycle(5);
+            c.SetDriverName("Tiny");
+            c.PopAwheely();
+            Console.WriteLine(c.name);
         }
     }
 }

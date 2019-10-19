@@ -14,6 +14,7 @@ namespace _1
             var pointValues = p.Deconstruct();
             Console.WriteLine(pointValues.XPos);
             Console.WriteLine(pointValues.YPos);
+            Math
         }
     }
     struct Point
